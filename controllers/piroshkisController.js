@@ -1,6 +1,6 @@
 const Piroshki = require('../models/Piroshki');
 
-module.exports = piroshkiController = {
+module.exports = piroshkisController = {
     
     index: function(req, res, next) {
         res.render('piroshkis/index', {piroshkis: Piroshki.getAllPiroshkis()});

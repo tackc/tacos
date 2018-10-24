@@ -29,6 +29,24 @@ hr {
   
 }
 
+.container {
+  align-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+.image {
+  max-width: 200px;
+  max-height: 200px;
+  display: inline-block;
+  margin: auto;
+}
+
 /* Style the header links */
 .header a {
   float: left;
