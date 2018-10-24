@@ -12,7 +12,7 @@ module.exports = piroshkiController = {
     
     create: function(req, res, next) {
         let data = req.body;
-        Piroshki.addPiroshki(data.piroskhiName, data.piroshkiFilling, data.piroshkiSize);
+        Piroshki.addPiroshki(data.piroshkiName, data.piroshkiFilling, data.piroshkiSize);
         res.redirect('/piroshkis');
     },
 
@@ -21,8 +21,8 @@ module.exports = piroshkiController = {
     },
 
     edit: function(req, res, next) {
-        piroskhi = Piroshki.getPiroshki(req.params.id);
-        res.render('piroskhis/edit', {piroshki: piroshki, id: req.params.id});
+        piroshki = Piroshki.getPiroshki(req.params.id);
+        res.render('piroshkis/edit', {piroshki: piroshki, id: req.params.id});
     },
     
     update: function(req, res, next) {

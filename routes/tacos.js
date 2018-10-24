@@ -3,6 +3,8 @@ var express = require('express');
 var router = express.Router();
 var tacos = require('../controllers/tacosController');
 
+router.get('/', tacos.home);
+
 router.get('/tacos', tacos.index);
 router.get('/tacos/new', tacos.new);
 router.post('/tacos', tacos.create);

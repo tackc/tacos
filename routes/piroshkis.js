@@ -3,7 +3,7 @@ var router = express.Router();
 var piroshkis = require('../controllers/piroshkisController');
 
 router.get('/piroshkis', piroshkis.index);
-router.get('/piroshkis/new', piroshkis.net);
+router.get('/piroshkis/new', piroshkis.new);
 router.post('/piroshkis', piroshkis.create);
 router.get('/piroshkis/:id', piroshkis.show);
 router.get('/piroshkis/:id/edit', piroshkis.edit);

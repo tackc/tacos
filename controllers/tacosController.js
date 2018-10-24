@@ -2,6 +2,10 @@ const Taco = require('../models/Taco');
 
 module.exports = tacosController = {
 
+    home: function(req, res, next) {
+        res.render('index', {title:"Taco vs Piroshki"});
+    },
+
     index: function(req, res, next) {
         res.render('tacos/index', { tacos: Taco.getAllTacos() });
     },
